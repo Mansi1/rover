@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest test",
     "test:dev": "jest test --watch",
-    "run": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",

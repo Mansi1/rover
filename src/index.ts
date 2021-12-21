@@ -23,12 +23,12 @@ const chunk = <T>(arr: Array<T>, chunkSize = 2): Array<Array<T>> => {
 }
 
 const program = () => {
-    const getLines = rawInput
+    const lines = rawInput
         .split('\n')
         //last line empty
         .filter(v => !!v)
 
-    const [gridRawInput, ...rawInputRovers] = getLines;
+    const [gridRawInput, ...rawInputRovers] = lines;
     const [upperRightX, upperRightY] = gridRawInput.split(' ').map((num) => parseInt(num));
     const grid = new Grid(upperRightX, upperRightY)
 
